@@ -1,0 +1,8 @@
+# compilation .NET
+bin/
+obj/
+
+# others
+*.user
+*.vs/
+.vscode/

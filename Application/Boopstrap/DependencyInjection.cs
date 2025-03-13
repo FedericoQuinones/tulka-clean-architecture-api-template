@@ -2,7 +2,7 @@
 using System.Reflection;
 using MediatR;
 
-namespace Application
+namespace Application.Boopstrap
 {
     public static class DependencyInjection
     {

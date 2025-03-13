@@ -4,8 +4,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Infrastructure.Persistence;
 using Domain.Entities;
+using Application.Common.Interfaces;
+using Infrastructure.Services;
 
-namespace Infrastructure
+namespace Infrastructure.Boopstrap
 {
     public static class DependencyInjection
     {
@@ -19,6 +21,8 @@ namespace Infrastructure
             services.AddIdentity<User, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
+
+            services.AddScoped<IJwtService, JwtService>();
 
             return services;
         }

@@ -882,16 +882,6 @@
         "runtime": {
           "bin/placeholder/Domain.dll": {}
         }
-      },
-      "Shared/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/Shared.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Shared.dll": {}
-        }
       }
     }
   },
@@ -2022,19 +2012,13 @@
       "type": "project",
       "path": "../Domain/Domain.csproj",
       "msbuildProject": "../Domain/Domain.csproj"
-    },
-    "Shared/1.0.0": {
-      "type": "project",
-      "path": "../Shared/Shared.csproj",
-      "msbuildProject": "../Shared/Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
       "Domain >= 1.0.0",
       "FluentValidation >= 11.11.0",
-      "MediatR >= 12.4.1",
-      "Shared >= 1.0.0"
+      "MediatR >= 12.4.1"
     ]
   },
   "packageFolders": {
@@ -2071,9 +2055,6 @@
           "projectReferences": {
             "C:\\Users\\fede\\Desktop\\tulka-clean-architecture-api-template\\tulka-clean-architecture-api-template\\Domain\\Domain.csproj": {
               "projectPath": "C:\\Users\\fede\\Desktop\\tulka-clean-architecture-api-template\\tulka-clean-architecture-api-template\\Domain\\Domain.csproj"
-            },
-            "C:\\Users\\fede\\Desktop\\tulka-clean-architecture-api-template\\tulka-clean-architecture-api-template\\Shared\\Shared.csproj": {
-              "projectPath": "C:\\Users\\fede\\Desktop\\tulka-clean-architecture-api-template\\tulka-clean-architecture-api-template\\Shared\\Shared.csproj"
             }
           }
         }
